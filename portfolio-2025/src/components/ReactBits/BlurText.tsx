@@ -1,12 +1,13 @@
-import { motion, Transition } from "motion/react";
-import { EasingFunction } from "motion-utils";
+import { motion } from "motion/react";
+import type { Transition } from "motion/react";
+import type { EasingFunction } from "motion-utils";
 import { useEffect, useRef, useState, useMemo } from "react";
 
 type BlurTextProps = {
   text?: string;
   delay?: number;
   className?: string;
-  animateBy?: "words" | "letters";i
+  animateBy?: "words" | "letters";
   direction?: "top" | "bottom";
   threshold?: number;
   rootMargin?: string;
@@ -16,6 +17,7 @@ type BlurTextProps = {
   onAnimationComplete?: () => void;
   stepDuration?: number;
 };
+
 
 const buildKeyframes = (
   from: Record<string, string | number>,
