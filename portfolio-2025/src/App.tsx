@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from "@/components/theme/theme-provider.tsx"
 
 
 // COMPONENTS
@@ -18,6 +19,7 @@ function App() {
     }
   ]
   return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Routes>
         {RoutesPages.map((route) => (
           <Route
@@ -27,6 +29,7 @@ function App() {
           />
         ))}
       </Routes>
+    </ThemeProvider>
   )
 }
 
