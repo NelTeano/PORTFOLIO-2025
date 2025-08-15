@@ -1,4 +1,4 @@
-import LightRays from '../components/ReactBits/LightRays';
+// import LightRays from '../components/ReactBits/LightRays';
 import BlurText from "../components/ReactBits/BlurText";
 import { ModeToggle } from '@/components/mode-toggle';
 
